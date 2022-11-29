@@ -13,4 +13,9 @@
         <item name="android:statusBarColor">@color/black    </item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="toolbarTitleAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/nav_dim_30</item>
+        <item name="fontFamily">@font/passion_one</item>
+    </style>
 </resources>
