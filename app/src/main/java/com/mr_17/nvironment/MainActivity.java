@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        supportUsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SendToActivity(SupportUsActivity.class, true);
+            }
+        });
+
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
