@@ -47,6 +47,7 @@
         android:textSize="@dimen/dim_24"
         app:layout_constraintBottom_toTopOf="@+id/first_name5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="1.0" />
@@ -89,19 +90,21 @@
         android:textSize="@dimen/dim_24"
         app:layout_constraintBottom_toTopOf="@+id/first_name4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:title="Support Us"
         app:titleTextAppearance="@style/toolbarTitleAppearance"
-        app:titleTextColor="@color/black" />
+        app:titleTextColor="@color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -112,7 +115,7 @@
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.046"
+        app:layout_constraintVertical_bias="0.051"
         app:srcCompat="@drawable/greenpic1" />
 
     <TextView
@@ -123,7 +126,11 @@
         android:paddingRight="20dp"
         android:text="To help us in our journey of establishing a safe and secured enviornment for our future and bring forth the necessity to go green we would offer a special thanks to be a part of NVironment project. "
         android:textColor="#61DECF"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="249dp" />
+        app:layout_constraintBottom_toTopOf="@+id/attach_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.029" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
