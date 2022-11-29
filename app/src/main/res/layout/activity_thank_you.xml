@@ -4,26 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgimg"
+    android:background="@color/blue_black"
     tools:context=".ThankYouActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:fontFamily="@font/passion_one"
         android:gravity="center"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:text="Your request have been performed successfully!"
-        android:textColor="#353535"
+        android:text="Your request have been executed successfully!"
+        android:textColor="@color/white"
         android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.063" />
 
     <TextView
         android:id="@+id/textView3"
@@ -32,29 +32,57 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/passion_one"
         android:text="Thank You!"
+        android:textColor="#9F9F9F"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.031" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/return_home_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="6"
-        android:layout_marginBottom="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/button_background"
         android:fontFamily="@font/passion_one"
         android:letterSpacing="0.05"
         android:text="Home"
+        android:textColor="@color/black"
         android:textSize="@dimen/dim_40"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to homepage and discover more about us!"
+        android:textColor="#69E1D2"
+        app:layout_constraintBottom_toTopOf="@+id/return_home_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.976"
+        tools:layout_editor_absoluteX="51dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="202dp"
+        android:layout_height="201dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096"
+        app:srcCompat="@drawable/paymentdone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

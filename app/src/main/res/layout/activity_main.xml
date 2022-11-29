@@ -36,42 +36,44 @@
         android:id="@+id/logout_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="6"
-        android:layout_marginBottom="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/button_background"
         android:fontFamily="@font/passion_one"
         android:letterSpacing="0.05"
         android:text="LOGOUT"
+        android:textColor="@color/black"
         android:textSize="@dimen/dim_40"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.953" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/post_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="6"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/button_background"
         android:fontFamily="@font/passion_one"
         android:letterSpacing="0.05"
         android:text="Post"
+        android:textColor="@color/black"
         android:textSize="@dimen/dim_40"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.026" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/support_us_button"
@@ -114,6 +116,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/support_us_button"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="371dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="To post a movement you organised and to get funded for the same click on the POST button! We hold a lucky draw daily where you have a great opportunity to win exciting rewards or cash in your wallet."
+        android:textColor="#61DECF"
+        app:layout_constraintBottom_toTopOf="@+id/logout_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.244" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
