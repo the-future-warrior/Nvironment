@@ -38,10 +38,9 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/passion_one"
-        android:hint="Full Name..."
+        android:hint="Email..."
         android:paddingStart="@dimen/dim_15"
         android:paddingEnd="@dimen/dim_15"
-        android:text="Email..."
         android:textColor="@color/light_blue"
         android:textColorHint="@color/light_blue"
         android:textSize="@dimen/dim_24"
@@ -60,10 +59,9 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/passion_one"
-        android:hint="Full Name..."
+        android:hint="Amount...."
         android:paddingStart="@dimen/dim_15"
         android:paddingEnd="@dimen/dim_15"
-        android:text="Amount...."
         android:textColor="@color/light_blue"
         android:textColorHint="@color/light_blue"
         android:textSize="@dimen/dim_24"
@@ -103,8 +101,8 @@
         app:title="Support Us"
         app:titleTextAppearance="@style/toolbarTitleAppearance"
         app:titleTextColor="@color/black"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="68dp" />
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-1dp" />
 
     <ImageView
         android:id="@+id/imageView3"
