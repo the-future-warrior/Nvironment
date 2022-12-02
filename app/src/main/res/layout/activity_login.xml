@@ -8,6 +8,7 @@
     tools:context=".LoginActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,12 +25,12 @@
                 android:id="@+id/curves"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="0.895"
                 android:cropToPadding="false"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="0.895"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
@@ -39,19 +40,19 @@
                 android:id="@+id/heading"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="4.5"
                 app:layout_constraintBottom_toBottomOf="@+id/curves"
+                app:layout_constraintDimensionRatio="4.5"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:layout_constraintVertical_bias="0.104"
                 app:srcCompat="@drawable/login_heading" />
 
             <EditText
                 android:id="@+id/login_email"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="6"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="20dp"
@@ -65,6 +66,7 @@
                 android:textColorHint="@color/light_blue"
                 android:textSize="@dimen/dim_24"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/curves"
@@ -74,7 +76,6 @@
                 android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="6"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="@dimen/dim_5"
                 android:layout_marginEnd="20dp"
@@ -88,6 +89,7 @@
                 android:textColorHint="@color/light_blue"
                 android:textSize="@dimen/dim_24"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.505"
                 app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +130,6 @@
                 android:id="@+id/login_button"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="6"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="20dp"
@@ -136,10 +137,11 @@
                 android:fontFamily="@font/passion_one"
                 android:letterSpacing="0.05"
                 android:text="LOGIN"
+                android:textColor="@color/black"
                 android:textSize="@dimen/dim_40"
                 android:textStyle="bold"
-                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/forgot_password"
@@ -177,6 +179,18 @@
                 app:layout_constraintStart_toEndOf="@+id/need_an_account"
                 app:layout_constraintTop_toBottomOf="@id/login_button"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="119dp"
+                android:layout_height="116dp"
+                app:layout_constraintBottom_toBottomOf="@+id/curves"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/curves"
+                app:layout_constraintVertical_bias="0.225"
+                app:srcCompat="@drawable/logo" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
