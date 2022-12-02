@@ -26,7 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
@@ -98,11 +97,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:title="Support Us"
         app:titleTextAppearance="@style/toolbarTitleAppearance"
-        app:titleTextColor="@color/black"
-        tools:layout_editor_absoluteX="-9dp"
-        tools:layout_editor_absoluteY="-1dp" />
+        app:titleTextColor="@color/black" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -122,8 +122,11 @@
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="To help us in our journey of establishing a safe and secured enviornment for our future and bring forth the necessity to go green we would offer a special thanks to be a part of NVironment project. "
-        android:textColor="#61DECF"
+        android:text="To help us in our journey of establishing a safe and secured enviornment for our future and bring forth the necessity to go green we would offer a special thanks to be a part of Nvironment project. "
+        android:textColor="@color/blue"
+        android:textSize="@dimen/dim_16"
+        android:fontFamily="@font/passion_one"
+        android:justificationMode="inter_word"
         app:layout_constraintBottom_toTopOf="@+id/attach_button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

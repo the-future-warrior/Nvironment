@@ -36,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        contributeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SendToActivity(PaymentActivity.class, true);
+            }
+        });
+
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

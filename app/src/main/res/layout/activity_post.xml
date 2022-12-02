@@ -131,10 +131,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/upload_button"
@@ -165,12 +162,11 @@
         android:layout_marginRight="50dp"
         android:gravity="center"
         android:text="Attach a video and increase the chance of winning the lucky draw!"
-        android:textColor="#61DECF"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/passion_one"
+        android:textSize="@dimen/dim_15"
         app:layout_constraintBottom_toTopOf="@+id/attach_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description"
-        app:layout_constraintVertical_bias="0.933" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

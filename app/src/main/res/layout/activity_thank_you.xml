@@ -16,7 +16,7 @@
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:text="Your request have been executed successfully!"
-        android:textColor="@color/white"
+        android:textColor="@color/light_blue"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/passion_one"
         android:text="Thank You!"
-        android:textColor="#9F9F9F"
+        android:textColor="@color/medium_blue"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,12 +67,14 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return to homepage and discover more about us!"
-        android:textColor="#69E1D2"
+        android:text="Return to Homepage and discover more about us!"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/dim_16"
+        android:fontFamily="@font/passion_one"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/return_home_button"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.976"
-        tools:layout_editor_absoluteX="51dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
