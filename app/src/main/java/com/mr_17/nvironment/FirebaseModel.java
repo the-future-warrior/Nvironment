@@ -15,12 +15,16 @@ public class FirebaseModel
             node_movementName = "movementName",
             node_joiningDate = "joiningDate",
             node_posts = "Posts",
+            node_supports = "Supports",
             node_description = "description",
+            node_thoughts = "thoughts",
+            node_email = "email",
             node_videoUrl = "videoUrl";
 
     public static DatabaseReference databaseRef_root = FirebaseDatabase.getInstance().getReference();
     public static DatabaseReference databaseRef_users = databaseRef_root.child(node_users);
     public static DatabaseReference databaseRef_posts = databaseRef_root.child(node_posts);
+    public static DatabaseReference databaseRef_supports = databaseRef_root.child(node_supports);
 
     public static StorageReference storageRef_root = FirebaseStorage.getInstance().getReference();
     public static StorageReference storageRef_posts = storageRef_root.child(node_posts);

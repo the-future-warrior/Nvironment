@@ -7,93 +7,8 @@
     android:background="@color/blue_black"
     tools:context=".SupportUsActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/attach_button3"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/button_background"
-        android:fontFamily="@font/passion_one"
-        android:letterSpacing="0.05"
-        android:text="Make Payment "
-        android:textColor="@color/black"
-        android:textSize="@dimen/dim_40"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/first_name4"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/edittext_background"
-        android:fontFamily="@font/passion_one"
-        android:hint="Email..."
-        android:paddingStart="@dimen/dim_15"
-        android:paddingEnd="@dimen/dim_15"
-        android:textColor="@color/light_blue"
-        android:textColorHint="@color/light_blue"
-        android:textSize="@dimen/dim_24"
-        app:layout_constraintBottom_toTopOf="@+id/first_name5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/first_name5"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/edittext_background"
-        android:fontFamily="@font/passion_one"
-        android:hint="Amount...."
-        android:paddingStart="@dimen/dim_15"
-        android:paddingEnd="@dimen/dim_15"
-        android:textColor="@color/light_blue"
-        android:textColorHint="@color/light_blue"
-        android:textSize="@dimen/dim_24"
-        app:layout_constraintBottom_toTopOf="@+id/attach_button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.761" />
-
-    <EditText
-        android:id="@+id/first_name3"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/edittext_background"
-        android:fontFamily="@font/passion_one"
-        android:hint="Full Name..."
-        android:paddingStart="@dimen/dim_15"
-        android:paddingEnd="@dimen/dim_15"
-        android:textColor="@color/light_blue"
-        android:textColorHint="@color/light_blue"
-        android:textSize="@dimen/dim_24"
-        app:layout_constraintBottom_toTopOf="@+id/first_name4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="1.0" />
-
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue"
@@ -104,34 +19,129 @@
         app:titleTextAppearance="@style/toolbarTitleAppearance"
         app:titleTextColor="@color/black" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="366dp"
-        android:layout_height="173dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.051"
-        app:srcCompat="@drawable/greenpic1" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="To help us in our journey of establishing a safe and secured enviornment for our future and bring forth the necessity to go green we would offer a special thanks to be a part of Nvironment project. "
-        android:textColor="@color/blue"
-        android:textSize="@dimen/dim_16"
-        android:fontFamily="@font/passion_one"
-        android:justificationMode="inter_word"
-        app:layout_constraintBottom_toTopOf="@+id/attach_button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="366dp"
+                android:layout_height="173dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/greenpic1" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="To help us in our journey of establishing a safe and secured enviornment for our future and bring forth the necessity to go green we would offer a special thanks to be a part of Nvironment project. "
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dim_16"
+                android:fontFamily="@font/passion_one"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="@dimen/dim_24"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/passion_one"
+                android:hint="Full Name..."
+                android:paddingStart="@dimen/dim_15"
+                android:paddingEnd="@dimen/dim_15"
+                android:textColor="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textSize="@dimen/dim_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/passion_one"
+                android:hint="Email..."
+                android:paddingStart="@dimen/dim_15"
+                android:paddingEnd="@dimen/dim_15"
+                android:textColor="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textSize="@dimen/dim_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+            <EditText
+                android:id="@+id/thoughts"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/dim_5"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/passion_one"
+                android:gravity="top|left"
+                android:hint="Thoughts..."
+                android:inputType="textMultiLine"
+                android:padding="@dimen/dim_15"
+                android:textColor="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textSize="@dimen/dim_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email"
+                app:layout_constraintVertical_bias="0.008" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/passion_one"
+                android:letterSpacing="0.05"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_40"
+                android:textStyle="bold"
+                app:layout_constraintDimensionRatio="6"
+                app:layout_constraintTop_toBottomOf="@id/thoughts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
