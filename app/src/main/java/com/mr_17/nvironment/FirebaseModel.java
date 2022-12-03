@@ -9,8 +9,10 @@ public class FirebaseModel
 {
     public static String node_users = "Users",
             node_uid = "uid",
+            node_name = "name",
             node_firstName = "firstName",
             node_lastName = "lastName",
+            node_movementName = "movementName",
             node_joiningDate = "joiningDate",
             node_posts = "Posts",
             node_description = "description",
