@@ -36,15 +36,15 @@
 
             <ImageView
                 android:id="@+id/heading"
-                android:layout_width="411dp"
-                android:layout_height="91dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="4.5"
                 app:layout_constraintBottom_toBottomOf="@+id/curves"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/sign_up_heading" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45"
+                app:srcCompat="@drawable/sign_up_heading"/>
 
             <EditText
                 android:id="@+id/first_name"
@@ -239,17 +239,6 @@
                 app:layout_constraintStart_toEndOf="@+id/already_have_an_account"
                 app:layout_constraintTop_toBottomOf="@id/signup_button"
                 app:layout_constraintVertical_bias="0.0" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="129dp"
-                android:layout_height="126dp"
-                app:layout_constraintBottom_toBottomOf="@+id/curves"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/curves"
-                app:layout_constraintVertical_bias="0.207"
-                app:srcCompat="@drawable/logo" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
