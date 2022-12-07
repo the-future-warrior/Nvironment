@@ -47,7 +47,7 @@
         android:visibility="invisible" />
 
     <EditText
-        android:id="@+id/first_name"
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
@@ -69,7 +69,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/last_name"
+        android:id="@+id/movement_name"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
@@ -77,7 +77,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/passion_one"
-        android:hint="Name of the movement.."
+        android:hint="Name of the movement..."
         android:paddingStart="@dimen/dim_15"
         android:paddingEnd="@dimen/dim_15"
         android:textColor="@color/light_blue"
@@ -87,7 +87,7 @@
         app:layout_constraintDimensionRatio="6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/first_name"
+        app:layout_constraintTop_toBottomOf="@id/name"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -111,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/last_name"
+        app:layout_constraintTop_toBottomOf="@id/movement_name"
         app:layout_constraintVertical_bias="0.008" />
 
     <androidx.appcompat.widget.AppCompatButton

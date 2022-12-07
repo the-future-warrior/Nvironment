@@ -24,9 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -40,7 +38,7 @@ public class PostActivity extends AppCompatActivity {
     private DatabaseReference rootRef;
 
     private TextView warningMsg, acceptedMsg;
-    private EditText firstName, lastName, description;
+    private EditText name, movementName, description;
     private Button attachButton, uploadButton;
     private Uri videoUri;
     private ProgressDialog progressDialog;
@@ -81,8 +79,8 @@ public class PostActivity extends AppCompatActivity {
 
         warningMsg = findViewById(R.id.warning_message);
         acceptedMsg = findViewById(R.id.accepted_message);
-        firstName = findViewById(R.id.first_name);
-        lastName = findViewById(R.id.last_name);
+        name = findViewById(R.id.name);
+        movementName = findViewById(R.id.movement_name);
         description = findViewById(R.id.description);
         attachButton = findViewById(R.id.attach_button);
         uploadButton = findViewById(R.id.upload_button);
@@ -95,8 +93,7 @@ public class PostActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
                 {
-                    firstName.setText(snapshot.child(FirebaseModel.node_firstName).getValue().toString());
-                    lastName.setText(snapshot.child(FirebaseModel.node_lastName).getValue().toString());
+                    name.setText(snapshot.child(FirebaseModel.node_firstName).getValue().toString() + " " + snapshot.child(FirebaseModel.node_lastName).getValue().toString());
                 }
             }
 
@@ -193,15 +190,15 @@ public class PostActivity extends AppCompatActivity {
 
     private void UploadData(String videoUrl)
     {
-        String first_Name = firstName.getText().toString();
-        String last_Name = lastName.getText().toString();
+        String name_ = name.getText().toString();
+        String movement_Name = movementName.getText().toString();
         String description_ = description.getText().toString();
 
-        if (TextUtils.isEmpty(first_Name)) {
-            Toast.makeText(this, "First Name Required...", Toast.LENGTH_LONG).show();
+        if (TextUtils.isEmpty(name_)) {
+            Toast.makeText(this, "Name Required...", Toast.LENGTH_LONG).show();
         }
-        else if (TextUtils.isEmpty(last_Name)) {
-            Toast.makeText(this, "Last Name Required...", Toast.LENGTH_LONG).show();
+        else if (TextUtils.isEmpty(movement_Name)) {
+            Toast.makeText(this, "Movement Name Required...", Toast.LENGTH_LONG).show();
         }
         else if (TextUtils.isEmpty(description_)) {
             Toast.makeText(this, "Description Required...", Toast.LENGTH_LONG).show();
@@ -212,8 +209,8 @@ public class PostActivity extends AppCompatActivity {
         else {
             HashMap<String, String> map = new HashMap<>();
             map.put(FirebaseModel.node_uid, currentUserID);
-            map.put(FirebaseModel.node_firstName, first_Name);
-            map.put(FirebaseModel.node_lastName, last_Name);
+            map.put(FirebaseModel.node_name, name_);
+            map.put(FirebaseModel.node_movementName, movement_Name);
             map.put(FirebaseModel.node_description, description_);
             map.put(FirebaseModel.node_videoUrl, videoUrl);
 
