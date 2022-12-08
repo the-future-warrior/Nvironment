@@ -3,6 +3,8 @@ package com.mr_17.nvironment;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -107,8 +109,22 @@ public class SupportUsActivity extends AppCompatActivity {
                 public void onSuccess(Void unused) {
                     Toast.makeText(SupportUsActivity.this, "Submitted Succesfully!", Toast.LENGTH_SHORT).show();
                     thoughts.setText("");
+                    SendToActivity(ThankYouActivity.class, false);
                 }
             });
         }
+    }
+
+    private void SendToActivity(Class<? extends Activity> activityClass, boolean backEnabled)
+    {
+        Intent intent = new Intent(this, activityClass);
+
+        if (!backEnabled)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+        startActivity(intent);
+
+        if (!backEnabled)
+            finish();
     }
 }
